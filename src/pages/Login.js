@@ -1,9 +1,29 @@
-import React from 'react'
+import React from 'react';
+import Cabecalho from './Cabecalho';
+import '../App.css';
 
 function Login() {
   return (
-    <div>Login</div>
-  )
+    <>
+      <Cabecalho />
+      <div className="auth-container">
+        <div className="auth-box">
+          <div className="form-section">
+            <h2>Login</h2>
+            <form>
+              <input type="email" placeholder="E-mail" />
+              <input type="password" placeholder="Senha" />
+              <button type="submit">Entrar</button>
+            </form>
+          </div>
+          <div className="info-section">
+            <h2>Seja Bem Vindo</h2>
+            <p>Cadastre seus dados para acessar o site!</p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Login
+export default Login;
