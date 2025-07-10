@@ -1,11 +1,11 @@
 import React from 'react';
-import Cabecalho from './Cabecalho';
 import '../App.css';
+import Cabecalho from './Cabecalho';
 
 function Cadastro() {
   return (
     <>
-      <Cabecalho />
+     <Cabecalho />
       <div className="auth-container">
         <div className="auth-box">
           <div className="form-section">
