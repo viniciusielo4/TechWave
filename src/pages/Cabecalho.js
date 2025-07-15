@@ -13,7 +13,7 @@ function Cabecalho() {
           <li>TECH WAVE</li>
           <li><Link to="/produtos">PRODUTOS</Link></li>
           <li>CONTATO</li>
-          <li>PARCEIRO</li>
+          <li><Link to="/parceiro">PARCEIROS</Link></li>
           <li><Link to="/cadastro">CADASTRO</Link></li>
           <li><Link to="/">LOGIN</Link></li>
         </ul>

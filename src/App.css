@@ -127,18 +127,18 @@
 }
 
 /* Cada item do menu (li) */
-.nav-list li {
-  font-weight: bold;
-  font-size: 16px;
+.nav-list li a {
+  text-decoration: none;
   color: #0c1d5e;
-  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
   transition: color 0.2s;
 }
 
-/* Efeito de hover no menu */
-.nav-list li:hover {
+.nav-list li a:hover {
   color: #2f3757;
 }
+
 
 /* Container principal */
 .produtos-container {
@@ -315,4 +315,109 @@
   background-color: #1e8a46;
 }
 
+/* Parceiros*/
+.parceiros-container {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 80px;
+  gap: 40px;
+}
 
+.parceiros-content {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.parceiros-titulo {
+  font-size: 44px;
+  font-weight: 700;
+  color: #0a1f4f;
+  margin-bottom: 20px;
+}
+
+.parceiros-texto {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.parceiros-botao {
+  background-color: #e8e8e8;
+  border: none;
+  padding: 12px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Removed duplicate .parceiros-botao:hover */
+
+.parceiros-logos {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 60px;
+  justify-items: center;
+  align-items: center;
+}
+
+.logo-img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Removed duplicate .logo-img:hover */
+
+@media (max-width: 900px) {
+  .parceiros-container {
+    flex-direction: column;
+    padding: 20px 30px;
+    min-height: auto;
+  }
+
+  .parceiros-content {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .parceiros-logos {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+    gap: 30px 40px;
+  }
+
+  .logo-img {
+    max-width: 140px;
+  }
+}
+/* Removed duplicate or conflicting Parceiros styles */
+
+/* Removed duplicate .parceiros-content */
+
+/* Removed duplicate .parceiros-titulo */
+
+/* Removed duplicate .parceiros-texto */
+
+/* Removed duplicate .parceiros-botao */
+
+.parceiros-botao:hover {
+  background-color: #d4d4d4;
+}
+
+/* Removed duplicate .parceiros-logos */
+
+/* Removed duplicate .logo-img */
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+/* Removed duplicate responsive Parceiros styles */

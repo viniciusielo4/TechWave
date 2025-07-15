@@ -10,6 +10,11 @@ import produto6 from '../imagens/motorola.jpg';
 import produto7 from '../imagens/note.jpg';
 import produto8 from '../imagens/note2.jpg';
 import produto9 from '../imagens/pc.jpg';
+import Produto10 from '../imagens/XcaixaGame.jpg'
+import Produto11 from '../imagens/Xbox_one.jpg'
+import Produto12 from '../imagens/controle_xbox.jpg'
+import Produto13 from '../imagens/airpods.jpg'
+import Produto14 from '../imagens/TV.jpg'
 
 function Produtos() {
   const produtos = [
@@ -75,6 +80,41 @@ function Produtos() {
       precoAntigo: 2199.90,
       precoAtual: 1899.90,
       parcelas: '12x de R$ 158,33 sem juros'
+    },
+    {
+      nome: 'Xbox series X',
+      imagem: Produto10,
+      precoAntigo: 5890.90,
+      precoAtual: 5499.90,
+      parcelas: '12x de R$ 458.32 sem juros'
+    },
+    {
+      nome: 'Xbox one',
+      imagem: Produto11,
+      precoAntigo: 2800.90,
+      precoAtual: 2499.90,
+      parcelas: '12x de R$ 208.32 sem juros'
+    },
+    {
+      nome: 'Controle Xbox one verde',
+      imagem: Produto12,
+      precoAntigo: 400.90,
+      precoAtual: 300.90,
+      parcelas: '12x de R$ 25 sem juros'
+    },
+    {
+      nome: 'Air pods Pro',
+      imagem: Produto13,
+      precoAntigo: 2599.90,
+      precoAtual: 2499.90,
+      parcelas: '12x de R$ 208.32 sem juros'
+    },
+    {
+      nome: 'Smart TV samsung 65"',
+      imagem: Produto14,
+      precoAntigo: 3199.90,
+      precoAtual: 2800.99,
+      parcelas: '12x de R$ 233.41 sem juros'
     }
   ];
 

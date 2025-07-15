@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import Cabecalho from './Cabecalho';
+import { Link } from 'react-router-dom';
 
 function Cadastro() {
   return (
@@ -15,7 +16,7 @@ function Cadastro() {
               <input type="text" placeholder="Nome Completo" />
               <input type="password" placeholder="Senha" />
               <input type="password" placeholder="Confirmar Senha" />
-              <button type="submit">Cadastrar</button>
+              <button type="submit"><Link to="/">Cadastrar</Link></button>
             </form>
           </div>
           <div className="info-section">
