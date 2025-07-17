@@ -7,6 +7,7 @@ import JBL from '../imagens/JBL_apoio.png'; //
 import xbox from '../imagens/xbox_logo.png'
 import '../App.css';
 import Cabecalho from './Cabecalho';
+import Fotter from '../components/Footer'
 
 
 function Parceiros() {
@@ -31,6 +32,7 @@ function Parceiros() {
             <img src={xbox} alt="xcaixa" className="logo-img" />
           </div>
         </div>
+        <Fotter/>
       </div>
     );
   }

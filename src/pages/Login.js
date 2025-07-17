@@ -1,6 +1,7 @@
 import React from 'react';
 import Cabecalho from './Cabecalho';
 import '../App.css';
+import { Link } from 'react-router-dom';
 
 function Login() {
   return (
@@ -13,7 +14,7 @@ function Login() {
             <form>
               <input type="email" placeholder="E-mail" />
               <input type="password" placeholder="Senha" />
-              <button type="submit">Entrar</button>
+              <button type="submit"><Link to='/home'>Entrar</Link></button>
             </form>
           </div>
           <div className="info-section">

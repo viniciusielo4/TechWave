@@ -16,6 +16,7 @@ import Produto12 from '../imagens/controle_xbox.jpg'
 import Produto13 from '../imagens/airpods.jpg'
 import Produto14 from '../imagens/TV.jpg'
 
+
 function Produtos() {
   const produtos = [
     {
@@ -144,9 +145,13 @@ function Produtos() {
               </div>
             );
           })}
+
         </div>
+         
       </div>
+    
     </>
+    
   );
 }
 

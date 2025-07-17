@@ -9,10 +9,10 @@ function Cabecalho() {
       <img src={logo} alt="Logo Tech Wave" className="logo" />
       <nav>
         <ul className="nav-list">
-          <li>INÍCIO</li>
-          <li>TECH WAVE</li>
+          <li><Link to="/home">INÍCIO</Link></li>
+          <li><Link to="/sobre">TECH WAVE</Link></li>
           <li><Link to="/produtos">PRODUTOS</Link></li>
-          <li>CONTATO</li>
+          <li><Link to= "/contato">CONTATO</Link></li>
           <li><Link to="/parceiro">PARCEIROS</Link></li>
           <li><Link to="/cadastro">CADASTRO</Link></li>
           <li><Link to="/">LOGIN</Link></li>

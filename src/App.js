@@ -5,6 +5,9 @@ import Cadastro from './pages/Cadastro';
 import Login from './pages/Login';
 import Produtos from './pages/Produtos'
 import Parceiros from './pages/Parceiros';
+import Sobre from './pages/Sobre';
+import Contato from './pages/Contato'
+import Home from './pages/Home';
 
 
 
@@ -16,6 +19,9 @@ function App() {
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/produtos" element={<Produtos/>} />
         <Route path="/parceiro" element={<Parceiros/>} />
+        <Route path="/sobre" element={<Sobre/>} />
+        <Route path="/contato" element={<Contato/>} />
+        <Route path="/home" element={<Home/>} />
       </Routes>
     </Router>
   );
