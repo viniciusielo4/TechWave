@@ -16,7 +16,7 @@ function Cabecalho() {
           <li><Link to="/parceiro">PARCEIROS</Link></li>
           <li><Link to="/cadastro">CADASTRO</Link></li>
           <li><Link to="/">LOGIN</Link></li>
-          <li><Link to="/cadastroprodutos">CADASTRAR PRODUTOS</Link></li>
+          <li><Link to="/cadastrofuncionarios">CADASTRAR FUNCIONARIOS</Link></li>
 
         </ul>
       </nav>

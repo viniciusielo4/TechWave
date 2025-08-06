@@ -8,7 +8,7 @@ import Parceiros from './pages/Parceiros';
 import Sobre from './pages/Sobre';
 import Contato from './pages/Contato'
 import Home from './pages/Home';
-import CadastroProdutos from './pages/CadastroProdutos';
+import CadastroFuncionarios from './pages/CadastroFuncionarios';
 
 
 
@@ -23,7 +23,7 @@ function App() {
         <Route path="/sobre" element={<Sobre/>} />
         <Route path="/contato" element={<Contato/>} />
         <Route path="/home" element={<Home/>} />
-        <Route path="/cadastroprodutos" element={<CadastroProdutos/>}/>
+        <Route path="/cadastrofuncionarios" element={<CadastroFuncionarios/>}/>
       </Routes>
     </Router>
   );
