@@ -12,16 +12,36 @@ function CadastroFuncionarios() {
     cargaHoraria: '',
   });
 
-
-
   const handleChange = (e) => {
     setFuncionario({ ...funcionario, [e.target.name]: e.target.value });
   };
 
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Funcionário cadastrado:', funcionario);
+
+    try {
+      const response = await fetch('http://localhost:3000/funcionarios', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(funcionario)
+      });
+
+      if (response.ok) {
+        alert('Funcionário cadastrado com sucesso!');
+        setFuncionario({
+          nomeCompleto: '',
+          cargo: '',
+          salario: '',
+          qualificacoes: '',
+          cargaHoraria: '',
+        });
+      } else {
+        alert('Erro ao cadastrar funcionário.');
+      }
+    } catch (error) {
+      console.error('Erro na requisição:', error);
+      alert('Erro na conexão com o servidor.');
+    }
   };
 
   return (
